@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aquamarine;
+  }
+   
+
+  .hidden{
+      display:none;
+  }
+   
+
+  .image {
+    margin: 1rem;
+  }
+  
+  #clickme{
+    border-radius: 10px;
+    background-color: red;
+    color: aliceblue;
+  }
+   
+  .container{
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      gap: 5%;
+  }
+   
+  .myform{
+      margin: 1.20rem;
+  }

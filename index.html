@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/developer.png" type="image/x-icon">
+    <title>javascript--gallery</title>
+</head>
+<body>
+    
+    <!-- Image---------------------Galleryyyyyyyyyyyyy---------------------------------------- -->
+    <div class="container">
+        <div class="makeinIndia">
+            <button id="image1" onclick="signupform()"><img class="image" src="images/Make_In_India.png" width="200px" alt="image1" ></button>
+        </div>
+
+        <div class="moblie">
+            <button id="image2" onclick="registrationform()"><img class="image" src="images/mobile.png" width="200px" alt="image2" ></button>
+        </div>
+ 
+        <div class="uiux">
+            <button id="image3" onclick="dicescore()"><img class="image" src="images/uiux.png" width="200px" alt="image3" ></button>
+        </div>
+ 
+        <div class="stock">
+            <button id="image4" onclick="generatecoupon()"><img class="image" src="images/istockphoto-1449081099-170667a.jpg" width="200px" alt="image4" ></button>
+        </div>
+    </div>
+ 
+    <!----------------------------------- form --------------------------- -->
+    <div class="myform hidden" id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="enter the name" required><br><br>
+ 
+        <label for="userName">Username:</label>
+        <input type="text" id="username" placeholder="enter  username "  required><br><br>
+ 
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="enter Your email" required><br><br>
+ 
+        <button type="submit" id="clickme" onclick="signinForm()">Submit</button>
+    </div>
+ 
+    <!-- --------display-- form ---------------------------------------------------------------------------------------------- -->
+    <div class="displayformInfo hidden" id="usernameinfo">
+        <p>Your userIDinformation is: <span id="info"></span></p>
+    </div>
+ 
+    <!-- ----------------------dice------------------------------ score ------ atempt -------------------->
+    <div class="diceWthScore hidden" id="dice-Score">
+        <p>attempts remaining : <span id="attemptsLeft">0</span></p>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="images/dice1.png" alt="Diceimage"></button>
+            <p>No of chance to  roll the dice: <span id="diceimage">3</span></p>
+            <p> TotalScore is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+ <!-- ---------------------hidden-------------------------------------- -->
+    <div class="hidden" id=" congratulatory-image">
+ 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
